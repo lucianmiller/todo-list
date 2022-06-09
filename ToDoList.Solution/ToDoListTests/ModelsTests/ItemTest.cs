@@ -19,7 +19,12 @@ namespace ToDoList.Tests
     {
       String description = "Walk the dog.";
       Item newItem = new Item(description);
-      Assert.AreEqual(description, result);
+      Assert.AreEqual(description);
+
+      string updatedDescription = "Do the dishes."
+      newItem.Description = updatedDescription;
+      string result = newItem.Description;
+      Assert.AreEqual(updatedDescription, result);
     }
   }
 }
