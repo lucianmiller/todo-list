@@ -8,6 +8,7 @@ namespace ToDoList.Models
     public Item(string description)
     {
       Description = description;
+      _instances.Add(this);
     }
   }
 }
