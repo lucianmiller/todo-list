@@ -4,7 +4,13 @@ using ToDoList.Models;
 namespace ToDoList.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class ItemTests : IDisposable
+  {
+    public void Dispose()
+    {
+      Item.ClearAll();
+    }
+  }
   {
 
     [TestMethod]
